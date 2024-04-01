@@ -1,12 +1,16 @@
-import React from "react";
+import * as React from "react";
+import Layout from "../components/layout";
 
 function AboutPage() {
   return (
-    <div>
-      <h1>About</h1>
-      <p>This is the about page</p>
-    </div>
+    <Layout pageTitle="About">
+      <main className="flex flex-col max-w-lg mx-auto">
+        <p className="mt-10">This is the about page</p>
+      </main>
+    </Layout>
   );
 }
+
+export const Head = () => <title>About dev</title>;
 
 export default AboutPage;

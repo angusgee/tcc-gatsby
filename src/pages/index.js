@@ -1,14 +1,18 @@
 import * as React from "react";
+import Layout from "../components/layout";
 
 function IndexPage() {
   return (
-    <main className="flex flex-col max-w-lg mx-auto">
-      <h1 className="mt-10 text-4xl font-bold">Welcome to my Gatsby site!</h1>
-      <p className="mt-10">I'm making this by following the Gatsby Tutorial.</p>
-    </main>
+    <Layout pageTitle="Home">
+      <main className="flex flex-col max-w-lg mx-auto">
+        <p className="mt-10">
+          I'm making this by following the Gatsby Tutorial.
+        </p>
+      </main>
+    </Layout>
   );
 }
 
-export default IndexPage;
-
 export const Head = () => <title>Dev env</title>;
+
+export default IndexPage;
